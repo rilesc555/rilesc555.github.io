@@ -1,0 +1,4 @@
+- Biology 108 - General Biology
+- CompSci 101 - Problem Solving and Programming I
+- CompSci 191 - Discrete Structures I
+- Math 220 - Calculus II
