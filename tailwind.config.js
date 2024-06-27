@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: ['**/*.html'],
   presets: [],
@@ -250,6 +253,16 @@ module.exports = {
       xl: ['0 20px 13px rgb(0 0 0 / 0.03)', '0 8px 5px rgb(0 0 0 / 0.08)'],
       '2xl': '0 25px 25px rgb(0 0 0 / 0.15)',
       none: '0 0 #0000',
+    },
+    extend: {
+      textShadow: {
+        sm: '0 1px 2px var(--tw-shadow-color)',
+        DEFAULT: '0 2px 4px var(--tw-shadow-color)',
+        lg: '0 8px 16px var(--tw-shadow-color)',
+      },
+      fontFamily: {
+        MajorMono: ['MajorMonoDisplay']
+      },
     },
     fill: ({ theme }) => ({
       none: 'none',
@@ -1059,5 +1072,16 @@ module.exports = {
       50: '50',
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          'text-shadow': (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme('textShadow') }
+      )
+    }),
+  ],
 }

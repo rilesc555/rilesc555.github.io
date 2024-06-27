@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "MajorMonoDisplay";
+
+  font-weight: 400;
+
+  src: url(../fonts/MajorMonoDisplay-Regular.ttf) format('truetype');
+
+  font-style: normal;
+}
+
 /*
 ! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
 */
@@ -554,21 +564,20 @@ video {
   --tw-contain-style:  ;
 }
 
-.sticky {
-  position: sticky;
+.absolute {
+  position: absolute;
 }
 
-.top-0 {
-  top: 0px;
+.relative {
+  position: relative;
 }
 
-.z-10 {
-  z-index: 10;
+.bottom-0 {
+  bottom: 0px;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+.right-0 {
+  right: 0px;
 }
 
 .flex {
@@ -579,31 +588,24 @@ video {
   display: none;
 }
 
+.max-h-96 {
+  max-height: 24rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
 
-.max-w-5xl {
-  max-width: 64rem;
+.flex-col {
+  flex-direction: column;
 }
 
-.items-center {
-  align-items: center;
+.gap-10 {
+  gap: 2.5rem;
 }
 
-.justify-between {
-  justify-content: space-between;
-}
-
-.space-x-8 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(2rem * var(--tw-space-x-reverse));
-  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.bg-slate-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+.gap-20 {
+  gap: 5rem;
 }
 
 .bg-teal-700 {
@@ -611,8 +613,29 @@ video {
   background-color: rgb(15 118 110 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
 .p-4 {
   padding: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.font-MajorMono {
+  font-family: MajorMonoDisplay;
 }
 
 .text-3xl {
@@ -629,29 +652,40 @@ video {
   font-weight: 500;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.delay-100 {
-  transition-delay: 100ms;
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .duration-300 {
   transition-duration: 300ms;
 }
 
-.ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:text-teal-300:hover {
@@ -661,21 +695,6 @@ video {
 
 .hover\:opacity-90:hover {
   opacity: 0.9;
-}
-
-.focus\:outline-none:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-@media (min-width: 640px) {
-  .sm\:block {
-    display: block;
-  }
-
-  .sm\:hidden {
-    display: none;
-  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -689,3 +708,4 @@ video {
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }
+

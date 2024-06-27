@@ -2,3 +2,16 @@
 - CompSci 101 - Problem Solving and Programming I
 - CompSci 191 - Discrete Structures I
 - Math 220 - Calculus II
+- CompSci 201 - Problem Solving and Programming II
+- Math 300 - Linear Algebra
+- CompSci 291 - Discrete Structures II
+- CompSci 303 - Data Structures
+- Physics 240 - Physics for Scientists and Engineers
+- Stats 235 - Elementary Statistics
+- CompSci 281 - Intro to Computer Architecture and Organization
+- CompSci 304 - Ethics and Professionalism
+- CompSci 320 - Data Communications and Networking
+- CompSci 349 - Java Programming with Applications
+- CompSci 394 - Applied Probability
+- CompSci 404 - Intro to Algorithms and Complexity
+- CompSci 490 - Web Development
