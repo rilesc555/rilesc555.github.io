@@ -580,6 +580,14 @@ video {
   right: 0px;
 }
 
+.right-20 {
+  right: 5rem;
+}
+
+.bottom-20 {
+  bottom: 5rem;
+}
+
 .flex {
   display: flex;
 }
